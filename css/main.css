@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.u-margin-right-small {
+  margin-right: 0.6rem;
+}
+
+.u-margin-left-medium {
+  margin-left: 1rem;
+}
+
+.card__back, .card__front {
+  position: absolute;
+  height: 27%;
+  width: 35%;
+  border-radius: 0.6rem;
+  background-size: cover;
+}
+.card__front {
+  padding: 2.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  left: 0;
+  top: 20%;
+  transform: translateX(-75%);
+  background-image: url(../images/bg-card-front.png);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.card__front .circle__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card__front .circle {
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+.card__front .big__circle {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.card__front .small__circle {
+  height: 1.6rem;
+  width: 1.6rem;
+  border: 2px solid hsl(279deg, 6%, 55%);
+}
+.card__front .owner__name {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(270deg, 3%, 87%);
+  margin-top: 6%;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.card__number {
+  font-size: 2.2rem;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  margin-top: 16%;
+  color: hsl(270deg, 3%, 87%);
+}
+.card__back {
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%);
+  background-image: url(../images/bg-card-back.png);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.card__back .last__digits {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  margin: 25% 0 0 80%;
+}
+
+@media (max-width: 30em) {
+  .card__back, .card__front {
+    width: 80%;
+    border-radius: 0.6rem;
+  }
+  .card__front {
+    height: 35%;
+    z-index: 1;
+    padding: 2.4rem;
+    top: -24%;
+    transform: translateX(5%);
+  }
+  .card__front .owner__name {
+    font-size: 1rem;
+  }
+  .card__front .card__number {
+    font-size: 1.8rem;
+  }
+  .card__back {
+    height: 33%;
+    top: -42%;
+    transform: translateX(20%);
+  }
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.first__section {
+  height: 100vh;
+  background: url(../images/bg-main-desktop.png);
+  background-size: cover;
+}
+
+.second__section {
+  position: relative;
+}
+.second__section .form {
+  color: hsl(278deg, 68%, 11%);
+  width: 35%;
+  margin: 17rem auto 0;
+}
+.second__section .form .row {
+  display: flex;
+}
+.second__section .form .col-25 {
+  flex: 25%;
+}
+.second__section .form .col-50 {
+  flex: 50%;
+}
+.second__section .form .col-75 {
+  flex: 75%;
+}
+.second__section .form .col-100 {
+  flex: 100%;
+}
+.second__section .form label {
+  margin-bottom: 0.8rem;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.second__section .form input {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+}
+.second__section .form .cvv {
+  width: 95%;
+  margin-left: 1rem;
+}
+.second__section .form .btn__submit {
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  height: 5rem;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 30em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .first__section {
+    background-image: url(../images/bg-main-mobile.png);
+    height: 33vh;
+  }
+  .second__section {
+    height: 67vh;
+  }
+  .second__section .form {
+    width: 86%;
+    margin: 9.6rem auto 2.4rem;
+  }
+}/*# sourceMappingURL=main.css.map */
