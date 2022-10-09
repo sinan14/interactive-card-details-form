@@ -1,0 +1,36 @@
+.submit__success {
+  color: $Very-dark-violet;
+  text-align: center;
+  width: 35%;
+  margin: 25.6rem auto 0;
+  @media (max-width: 30em) {
+    width: 86%;
+    margin: 9.6rem auto 2.4rem;
+  }
+
+  text-align: center;
+  .icon__complete {
+    margin-bottom: 3.2rem;
+  }
+  .btn__complete {
+    background-color: $Very-dark-violet;
+    color: $White;
+    height: 5rem;
+    width: 100%;
+    border-radius: $border-radius-medium;
+    letter-spacing: 1.6px;
+    font-size: $default-font-size;
+  }
+  .complete {
+    &__heading {
+      text-transform: uppercase;
+      color: $Very-dark-violet;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+    }
+    &__sub-heading {
+      color: $Light-grayish-violet;
+      margin-bottom: 4rem;
+    }
+  }
+}
